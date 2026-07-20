@@ -5,6 +5,7 @@ from zoneinfo import ZoneInfo
 from dateutil import parser
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+from fastapi.middleware.cors import CORSMiddleware
 
 TIMEZONE_FILE = Path("timezones.txt")
 
@@ -35,6 +36,14 @@ TIMEZONES = load_timezones()
 app = FastAPI(
     title="Tardis Remastered Backend",
     version="2.0.0",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 
