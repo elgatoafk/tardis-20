@@ -1,0 +1,152 @@
+.dark-mode .left-panel {
+    background-color: rgba(43, 62, 80, 0.8);
+    color: rgba(224, 230, 237, 0.8);
+}
+
+.dark-mode .right-panel {
+    background-color: rgba(62, 76, 97, 0.8);
+    color: rgba(224, 230, 237, 0.8);
+}
+
+.dark-mode .form-label {
+    font-family: 'Roboto Slab', serif;
+    color: rgba(224, 230, 237, 0.8);
+}
+
+.dark-mode .result-container .text-warning {
+    color: rgba(231, 111, 81, 0.8);
+}
+
+.dark-mode .result-container .text-success {
+    color: rgba(144, 202, 249, 0.8);
+}
+
+.dark-mode .form-check-label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgba(224, 230, 237, 0.8);
+    margin-bottom: 8px;
+}
+
+.dark-mode .form-check-input {
+    margin-right: 10px;
+}
+
+.dark-mode #main-form.form-control:invalid:required {
+    background-image: linear-gradient(to right, rgba(150, 75, 0, 0.25), rgba(240, 128, 128, 0.25));
+}
+
+.dark-mode #main-form.form-control:valid {
+    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.25), rgba(0, 255, 255, 0.25));
+}
+
+.dark-mode .result-container {
+    background-image: linear-gradient(to right, rgba(0, 128, 0, 0.25), rgba(0, 255, 255, 0.25));
+    border: none;
+    cursor: pointer;
+}
+
+.dark-mode .result-container h2, .dark-mode .result-text {
+    color: rgba(224, 230, 237, 0.8);
+}
+
+.dark-mode .result-container.copied {
+    background-image: linear-gradient(to right, rgba(47, 93, 117, 0.25), rgba(230, 230, 250, 0.25));
+}
+
+.dark-mode .warning-text {
+    color: rgba(231, 111, 81, 0.8);
+}
+
+.dark-mode .copy-message {
+    text-align: right;
+    color: rgba(192, 192, 192, 0.8);
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.dark-mode .datetime-input {
+    height: calc(1.75em + 1rem + 2px);
+    background-color: rgba(43, 62, 80, 0.8);
+    color: rgba(224, 230, 237, 0.8);
+    border: 1px solid rgba(144, 202, 249, 0.8);
+}
+
+.dark-mode .submit-button {
+    display: inline-block;
+    margin-top: 1rem;
+    text-align: center;
+    width: 50%;
+    background-color: rgba(144, 202, 249, 0.8);
+    color: rgba(0, 59, 111, 0.8);
+}
+
+.dark-mode .info-bubble {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: rgba(144, 202, 249, 0.8);
+    cursor: help;
+}
+
+.dark-mode .info-bubble:hover::after {
+    content: attr(title);
+    position: absolute;
+    top: -30px;
+    right: 10px;
+    background-color: rgba(43, 62, 80, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+    font-size: 0.9em;
+    color: rgba(224, 230, 237, 0.8);
+    z-index: 1000;
+}
+
+.dark-mode .form-control {
+    background-color: rgba(62, 76, 97, 0.8);
+    color: rgba(224, 230, 237, 0.8);
+    border: 1px solid rgba(144, 202, 249, 0.8);
+}
+
+.dark-mode .form-control:focus {
+    background-color: rgba(43, 62, 80, 0.8);
+    color: rgba(224, 230, 237, 0.8);
+    border-color: rgba(144, 202, 249, 0.8);
+    outline: none;
+}
+
+.dark-mode .form-control::placeholder {
+    color: rgba(144, 202, 249, 0.8);
+    opacity: 0.6;
+}
+
+.dark-mode .btn-primary,
+.dark-mode .toggle-button {
+    background-color: rgba(144, 202, 249, 0.8);
+    border: none;
+    color: rgba(0, 59, 111, 0.8);
+}
+
+.dark-mode .btn-primary:hover,
+.dark-mode .toggle-button:hover {
+    background-color: rgba(94, 140, 184, 0.8);
+    color: rgba(0, 59, 111, 0.8);
+}
+
+.dark-mode .btn-primary:focus,
+.dark-mode .toggle-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.dark-mode .btn-primary:active,
+.dark-mode .toggle-button:active {
+    background-color: rgba(38, 70, 83, 0.8);
+    color: rgba(0, 59, 111, 0.8);
+    outline: none;
+    box-shadow: none;
+}

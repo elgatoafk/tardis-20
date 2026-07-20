@@ -1,0 +1,181 @@
+.left-panel {
+    background-color: #8FA6CB;  /* Light Blue */
+    color: #003B6F;  /* Dark Blue */
+}
+
+.right-panel {
+    background-color: #FAF3DD;  /* Light Beige */
+    color: #003B6F;  /* Dark Blue */
+}
+
+.form-label {
+    font-family: 'Roboto Slab', serif;
+}
+
+.result-container .text-warning {
+    color: #28a745;  /* Green warning text */
+}
+
+.result-container .text-success {
+    color: #8FA6CB;  /* Light blue success text */
+}
+
+.form-check-label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 8px; /* Optional: Space between each radio button */
+}
+
+.form-check-input {
+    margin-right: 10px;
+}
+
+#main-form.form-control:invalid:required {
+  background-image: linear-gradient(to right, rgba(255, 192, 203, 0.5), rgba(245, 176, 65, 0.5));  /* pink and #f5b041 with 50% opacity */
+}
+
+#main-form.form-control:valid {
+
+  background-image: linear-gradient(to right, rgba(144, 238, 144, 0.35), rgba(173, 216, 230, 0.35));  /* lightgreen and lightblue with 35% opacity */
+}
+
+.result-container {
+  background-image: linear-gradient(to right, rgba(144, 238, 144, 0.35), rgba(173, 216, 230, 0.35));  /* Match the gradient */
+  border: none;  /* Remove border */
+  cursor: pointer;
+}
+
+.result-container h2, .result-text  {
+  color: #003B6F;
+}
+
+/* Style when the result is copied to the clipboard */
+.result-container.copied {
+  background-image: linear-gradient(to right, rgba(79, 93, 117, 0.35), rgba(230, 230, 250, 0.35));  /* Grey and light lavender with 35% opacity */
+}
+
+.warning-text {
+  color: #e76f51;
+}
+
+/* Style for the copy message in the lower right corner */
+.copy-message {
+  text-align: right;
+  color: #457b9d;  /* Light Blue */
+  font-size: 1em;;
+  margin-top: 10px;  /* Add some space above the message */
+}
+
+/* Styles for the datetime input */
+.datetime-input {
+  height: calc(1.75em + 1rem + 2px);  /* Make input taller */
+}
+
+/* Styles for the timezone label */
+.timezone-label {
+  display: flex;
+  align-items: center;
+}
+
+.timezone-label .form-check-input {
+  margin-right: 10px;
+  flex-shrink: 0;  /* Align left with margin between radio and text */
+}
+
+.right-panel,
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.datetime-input {
+  height: 100%;
+  flex: 1;
+  padding: 10px;
+}
+
+/* Custom info icon styling */
+.toggle-button {
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Info icon styling */
+.info-icon-wrapper {
+    position: absolute;
+    left: 50%; /* Center the info icon */
+    transform: translateX(100%); /* Position to the right of the button */
+    margin-left: 10px;
+}
+
+.info-icon {
+    color: rgba(128, 128, 128, 0.5); /* Grey color with 50% opacity */
+    cursor: pointer;
+}
+
+/* Show info text on hover */
+.info-icon-wrapper:hover .info-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.info-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: rgba(128, 128, 128, 0.5); /* Grey color with 50% opacity */
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: 125%; /* Position the tooltip below the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Center submit button */
+.submit-button {
+    display: inline-block;
+    margin-top: 1rem;
+    text-align: center;
+    width: 50%; /* Adjust the width as needed, e.g., 50%, 60%, etc. */
+}
+
+/* Info Bubble */
+.info-bubble {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5em;  /* Slightly larger icon */
+  color: #8FA6CB;
+  cursor: help;
+}
+
+.info-bubble:hover::after {
+  content: attr(title);
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  background-color: #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  font-size: 0.9em;
+  color: #333;
+  z-index: 1000;
+}
+
+#main-form.form-control {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 16px;
+}

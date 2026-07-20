@@ -1,0 +1,47 @@
+/* Footer Styles */
+.footer {
+    background-color: #003B6F;
+    color: #FAF3DD;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Content inside the footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Dark mode styles */
+body.dark-mode .footer {
+    background-color: #1a1a1a;
+    color: rgba(224, 230, 237, 0.8);
+}
+
+body.dark-mode .footer-link {
+    color: rgba(144, 202, 249, 0.8);
+}
+
+body.dark-mode .footer-link:hover {
+    color: rgba(231, 111, 81, 0.8);
+}
+
+.footer a {
+  color: #FAF3DD !important;
+  text-decoration: underline;
+}
+
+/* Additional hover effect */
+.footer a:hover {
+  color: #FC814A !important;
+}
+
+.footer-link {
+    margin-left: 3px !important;
+}

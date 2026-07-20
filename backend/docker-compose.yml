@@ -1,0 +1,9 @@
+services:
+  tardis-backend:
+    build: .
+    container_name: tardis-backend
+
+    ports:
+      - "8000:8000"
+
+    restart: unless-stopped
