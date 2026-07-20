@@ -116,14 +116,14 @@ def health():
     }
 
 
-@app.get("/timezones")
+@app.get("/user/timezones")
 def get_timezones():
     return {
         "timezones": TIMEZONES
     }
 
 
-@app.post("/get-difference")
+@app.post("/user/get-difference")
 def get_difference(request: DifferenceRequest):
     user_dt = parse_input(
         request.datetime_str,
@@ -145,7 +145,7 @@ def get_difference(request: DifferenceRequest):
     }
 
 
-@app.post("/add-subtract-timedelta")
+@app.post("/user/add-subtract-timedelta")
 def add_subtract_timedelta(
     request: TimedeltaRequest,
 ):
